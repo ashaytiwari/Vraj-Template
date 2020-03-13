@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6079226620.js" crossorigin="anonymous"></script>
+    <title>VRAJ</title>
+    <style>
+        a {
+            color: blanchedalmond;
+        }
+
+        .logo {
+            color: white;
+            font-size: xx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        }
+
+        .icon {
+            font-size: x-large;
+        }
+
+        .icon1 {
+            color: black;
+            font-size: 35px;
+            margin-top: 10px;
+            opacity: 0.7;
+        }
+
+        .cardRight , .cardLeft ,.cardLeft2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            
+            margin: auto;
+            padding: 10px;
+            transition: 0.3s;
+            background-color: white;
+          
+        }
+
+        .cardRight:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        .cardLeft,.cardLeft2:hover{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        .cardLeft , .cardLeft2{
+            width: 200px;
+            margin-left: 20px;
+            overflow-y: scroll;
+        }
+        .cardLeft2{
+            height:230px;
+        }
+        .cardLeft{
+            height:300px;
+        }
+        .navLeft{
+            position: fixed;
+        }
+        .cardRight{
+            width:200px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 500px;
+            margin: auto;
+            padding: 10px;
+            transition: 0.3s;
+            background-color: white;
+            
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .user {
+            font-family: 'Times new roman';
+        }
+
+        .leftnav {
+            height: 100%;
+        }
+
+        .row.content {
+            height: 2400px;
+        }
+
+        .blue {
+            color: dodgerblue;
+        }
+
+        input {
+            outline: 0;
+            border: 0;
+            border-bottom: 5px solid gray;
+
+        }
+        .story{
+            margin: 5px;
+            border:2px solid crimson;
+        }
+        @media screen and (max-width: 767px){
+            .leftnav{
+                height:auto;
+                width:100%;
+            }
+            .navbar{
+                width:100%;
+            }
+            .row.content{
+                height:auto;
+                width:100%;
+            }
+            .card{
+                width:100%;
+                
+            }
+            .navLeft{
+                visibility:visible;
+            }
+            
+        }
+
+    </style>
+    <link rel="shortcut icon" href="images/l.jpg">
+</head>
+
+<body>
+    <!-- nAVIGATION BAR starts -->
+    <nav class="navbar nav1" style="background-color: teal;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#">
+                    VRAJ
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home">
+                            <i class="icon glyphicon glyphicon-home"></i>
+                        </a></li>
+                    <li><a href="#videos">
+                            <i class="icon glyphicon glyphicon-facetime-video"></i>
+                        </a></li>
+                    <li><a href="#images">
+                            <i class="icon glyphicon glyphicon-picture"></i>
+                        </a></li>
+                    <li><a href="#status">
+                            <i class="icon glyphicon glyphicon-eye-open"></i>
+                        </a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><span class="icon glyphicon glyphicon-user"></span> </a></li>
+                    <li><a href="#login"><span class="icon glyphicon glyphicon-log-out"></span> </a></li>
+                </ul>
+                <form class=" navbar-form navbar-right" role="search">
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" placeholder="Search....">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar closes -->
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <!-- Left nav starts -->
+            <div class="col-md-3 well leftnav">
+                <div class="cardRight">
+                    <p class="user">
+                        <h4>Ashay Tiwari </h4>
+                    </p>
+                    <img class="img-circle" src="images/ashay.jpeg" width="60px" height="60px">
+                    <p class="user">
+                        <h6>SILENT SOUL</h6>
+                    </p>
+                    <p class="user">
+                        <h6>#VrajLover</h6>
+                    </p>
+
+                </div><br>
+                <div class="cardRight">
+                    <p class="user">Holy Places</p>
+                    <span class="label label-success">Vrindavan</span>
+                    <span class="label label-danger">Mayapur</span>
+                    <span class="label label-primary">Barsana</span>
+                    <span class="label label-info">Mathura</span>
+                    <span class="label label-warning">Ayodhya</span>
+                    <span class="label label-default">Kedarnath</span>
+                    <span class="label label-danger">Humpy</span>
+                </div><br>
+                <div class="alert alert-success fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                    <p><strong>Bhagwad-Gita</strong></p>
+                    Bhagwad-Gita session will be going on your city INDORE
+                </div>
+                <div class="alert alert-info fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                    <p><strong>Vraj trip</strong></p>
+                    Are you going to Vraj?
+                    <u>Book Tickets</u>
+                </div>
+                <div class="alert alert-danger fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                    <p><strong>Subscription</strong></p>
+                    Your subscription will be out of date in two days
+                    Subscribe Now :)
+                </div>
+            </div>
+            <!-- Left nav closes -->
+            <!-- Center post part starts -->
+            <div class="col-md-6 ">
+                <div class="card">
+                    <div class="cardHeader">
+                        <img class="img-circle" src="images/r2.jpg" width="50px" height="50px">
+                        <p class="user">
+                            <h5><strong>Radhanath Swami</strong></h5>
+                        </p>
+                    </div>
+                    <div class="cardBody">
+                        <img src="images/r1.jpg" width="470px" height="550px"><br><br>
+                        <i class="far fa-heart icon"></i>
+                        <i class="fas fa-share-alt icon"></i>
+                        <i class="far fa-comment icon"></i>
+                        <i class="fas fa-cloud-download-alt icon"></i>
+                        <p>
+                            <h6><strong>Radhanth Swami<i class="fas fa-check-circle blue"></i>:-</strong> Bhagavad Gita
+                                explains that happiness and distress in this world come and
+                                go like the summer and winter seasons but one who is wise is able to tolerate
+                                this and can experience a higher state of fulfilment
+                                and happiness that is not dependent on the things of this world.</h6>
+                        </p>
+                        <input class="form-control" type="text" placeholder="Add a Commnet">
+                    </div>
+                </div><br>
+                <div class="card">
+                    <div class="cardHeader">
+                        <img class="img-circle" src="images/k2.jpg" width="50px" height="50px">
+                        <p class="user">
+                            <h5><strong>Vrndavan_Leela</strong></h5>
+                        </p>
+                    </div>
+                    <div class="cardBody">
+                        <img src="images/radharani.jpg" width="470px" height="600px"><br><br>
+                        <i class="far fa-heart icon"></i>
+                        <i class="fas fa-share-alt icon"></i>
+                        <i class="far fa-comment icon"></i>
+                        <i class="fas fa-cloud-download-alt icon"></i>
+                        <p>
+                            <h6><strong>Vrndavan_leela:-</strong> In the sacred land of Vrindavan, the results of all devotional
+                                 activities performed here are multiplied one thousand times. </h6>
+                        </p>
+                        <input class="form-control" type="text" placeholder="Add a Commnet">
+                    </div>
+                </div><br>
+                <div class="card">
+                    <div class="cardHeader">
+                        <img class="img-circle" src="images/isckon.jpg" width="50px" height="50px">
+                        <p class="user">
+                            <h5><strong>ISCKON</strong></h5>
+                        </p>
+                    </div>
+                    <div class="cardBody">
+                        <img src="images/madhav.jpg" width="470px" height="450px"><br><br>
+                        <i class="far fa-heart icon"></i>
+                        <i class="fas fa-share-alt icon"></i>
+                        <i class="far fa-comment icon"></i>
+                        <i class="fas fa-cloud-download-alt icon"></i>
+                        <p>
+                            <h6><strong>ISCKON<i class="fas fa-check-circle blue"></i>:-</strong> 
+                                
+                            
+                            Hare Krishna Hare Krishna , Krishna Krishna Hare Hare;
+                            Hare Rama Hare Rama , Rama Rama Hare Hare ;
+                        </h6>
+                        </p>
+                        <input class="form-control" type="text" placeholder="Add a Commnet">
+                    </div>
+                </div><br>
+            </div>
+            <!-- Center post part end -->
+            <div class="col-md-2">
+              <div class="navLeft">
+                 
+                <div class="cardLeft">
+                    <h5><strong><i>Stories</i></strong></h5>
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <img class="img-circle story" src="images/r2.jpg" width="60px" height="60px"> 
+                    <br>Radhanath Swami <i class="fas fa-check-circle blue"></i><br>
+                    <img class="img-circle story" src="images/k4.jpg" width="60px" height="60px">
+                    <br> Krishna Arts<br>
+                    <img class="img-circle story" src="images/k3.jpg" width="60px" height="60px">
+                    <br> Hari Toshanam <i class="fas fa-check-circle blue"></i><br>
+                    <img class="img-circle story" src="images/mahadev.jpg" width="60px" height="60px">
+                    <br> Mahadev<i class="fas fa-check-circle blue"></i><br>
+                    <img class="img-circle story" src="images/ram.jpg" width="60px" height="60px">
+                    <br> Shri Ram<br>
+                    <img class="img-circle story" src="images/k2.jpg" width="60px" height="60px">
+                    <br>Madhav<br>
+            </div><br>
+            <div class="cardLeft2">
+                    <h5><strong><i>Suggested for you</i></strong></h5>
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <img class="img-circle " src="images/j.jpg" width="60px" height="60px"> 
+                    <br>Jahnnavi Harrison <i class="fas fa-check-circle blue"></i><br>
+                    <img class="img-circle " src="images/b.jpg" width="60px" height="60px">
+                    <br> Bhakti Charu Swami <i class="fas fa-check-circle blue"></i> <br>
+                    <img class="img-circle " src="images/k3.jpg" width="60px" height="60px">
+                    <br> Hari Toshanam <i class="fas fa-check-circle blue"></i><br>
+                    <img class="img-circle " src="images/p.jpg" width="60px" height="60px">
+                    <br> Prabhupad_Books<i class="fas fa-check-circle blue"></i><br>
+                    <img class="img-circle " src="images/k6.jpg" width="60px" height="60px">
+                    <br> Kanha<br>
+                    <img class="img-circle " src="images/k2.jpg" width="60px" height="60px">
+                    <br>Madhav<br>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
